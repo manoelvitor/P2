@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>IPS - Instituto Profissionalizante Santista</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="acessibilidade">
+      <nav>
+        <ul>
+          <li>
+            <a accesskey="1" title="Ir para o Menu" href="#imgLogo">[1] Ir Para o Menu</a>
+          </li>
+          <li>
+            <a accesskey="2" title="Ir Para o Conteúdo" href="#conteudo">[2] Ir Para o Conteúdo</a>
+          </li>
+          <li>
+            <a accesskey="3" title="Ir Para o Rodapé" href="#rodape">[3] Ir Para o Rodapé</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="direita" accesskey="4" title="Mapa do Site" href="mapa-site.html">
+        [4] Mapa do Site</a>
+    </div>
+    <nav>
+      <h1 class="logo">
+        <img src="img/LOGO.png" alt="logotipo ips" id="imgLogo" />
+      </h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <div class="burger">
+        <span class="linha1"></span>
+        <span class="linha2"></span>
+        <span class="linha3"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="contato">
+      <div class="formulario-de-contato">
+        <h2>Enviar Mensagem</h2>
+        <p>
+          Entre em contato conosco
+        </p>
+        <form>
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome Completo" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Insira seu Email" required />
+          </div>
+          <div class="form-group">
+            <label for="tel">Telefone:</label>
+            <input type="text" name="tel" id="tel" placeholder="Insira seu Telefone" required />
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Insira sua Mensagem" required></textarea>
+          </div>
+          <button class="botao">Enviar</button>
+        </form>
+      </div>
+      <div class="redes-sociais">
+        <h2>Redes Sociais</h2>
+        <img src="img/facebook.png" alt="facebook-icone" class="icones" />
+        <img src="img/twitter.png" alt="twitter-icone" class="icones" />
+        <img src="img/instagram.png" alt="instagram-icone" class="icones" />
+        <p>ips@gmail.com</p>
+        <p>Contato: (13) 99999-9999</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <p class="center">
+      IPS - Instituto Profissionalizante Santista. Todos os Direitos
+      Reservados. &copy; 2020
+    </p>
+
+    <address class="center">Av. Senador Feijó, 350 - Vila Matias, Santos - SP</address>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+
+</html>

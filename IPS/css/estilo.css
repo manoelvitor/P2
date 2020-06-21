@@ -1,0 +1,393 @@
+/* GERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.acessibilidade {
+  display: flex;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+  height: 35px;
+  align-items: center;
+}
+
+.acessibilidade nav {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+}
+
+.acessibilidade nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 1rem 0 1rem;
+}
+
+.acessibilidade nav ul li a {
+  font-size: 1.3rem;
+}
+
+.acessibilidade nav li a:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+.direita {
+  font-size: 1.3rem;
+}
+
+#imgLogo {
+  width: 100px;
+}
+
+#dvslider {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.btSlider {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 30%;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+  border: none;
+  width: 40px;
+  font-size: 20px;
+}
+
+#dvload {
+  width: 100%;
+  height: 5px;
+  margin-top: 350px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#dvbarra {
+  height: 100%;
+  background-color: white;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.botao {
+  display: inline-block;
+  color: #fff;
+  background: rgba(100, 100, 100, 0.8);
+  padding: 0.5rem 2rem;
+  border: none;
+  font-size: 2.1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3.7rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+p {
+  font-size: 2.3rem;
+}
+
+label {
+  font-size: 2.1rem;
+}
+
+a {
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: white;
+
+  /*text-shadow:2px 2px rgba(255, 255, 255, 0.2);*/
+}
+
+li a:hover {
+  color: gold;
+}
+
+ul {
+  list-style: none;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+  background-color: #444;
+}
+
+/* ACESSIBILIDADE */
+
+.mapa-site {
+  text-align: justify;
+  background-color: rgb(78, 76, 76, 0.9);
+  align-items: center;
+  margin: 30px;
+  margin-top: 15px;
+}
+.mapa-site h3 {
+  font-size: 16px;
+  margin-left: 15px;
+}
+.mapa-site h3 a:hover {
+  text-decoration: underline;
+}
+.mapa-site li {
+  font-size: 15px;
+}
+.mapa-site ul {
+  margin-left: 15px;
+}
+
+#map {
+  text-align: center;
+}
+
+/* MENU */
+
+nav {
+  width: 90%;
+  height: 95px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 5vh;
+  padding: 2rem 0rem;
+}
+
+.logo {
+  flex: 1 1 10rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  flex-basis: 25rem;
+}
+
+.mobile {
+  display: none;
+}
+
+/* COMENTARIOS */
+.feedback .comentarios {
+  display: flex;
+  padding: 1rem;
+}
+
+.feedback .comentarios .comentario {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.feedback .comentarios .comentario .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* CURSOS */
+
+.cards {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.card {
+  background-color: #464646;
+}
+
+.card-imagem-container img {
+  width: 100%;
+}
+
+.card-conteudo,
+.card-informacoes {
+  padding: 2.3rem;
+  text-align: center;
+}
+
+.card-conteudo h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.8rem;
+  color: gold;
+}
+
+.card-conteudo ul li {
+  font-size: 1.9rem;
+  padding: 0.4rem 0;
+  color: white;
+}
+
+.card-informacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.card-duracao {
+  font-size: 1.7rem;
+  color: gold;
+}
+
+.card-preco {
+  background: gold;
+  color: green;
+  font-weight: 500;
+}
+
+/* QUEM SOMOS */
+
+.empresa {
+  position: relative;
+  background: #333 url("../img/quemsomos.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+.empresa .empresa-conteudo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.empresa-conteudo p {
+  margin: 4rem 0;
+}
+
+.ceos .items {
+  display: flex;
+  padding: 1rem;
+}
+
+.ceos .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.ceos .items .item .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* CONTATO */
+
+.contato {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.contato .formulario-de-contato {
+  margin-right: 1.8rem;
+  border-right: 0.1rem solid #464646;
+  padding: 2.5rem;
+}
+
+.contato .formulario-de-contato p {
+  margin: 1rem 0;
+}
+
+.contato .redes-sociais {
+  padding: 2.5rem 0;
+}
+
+.contato .formulario-de-contato .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contato .formulario-de-contato label {
+  display: block;
+}
+
+.contato .formulario-de-contato input,
+.contato .formulario-de-contato textarea {
+  width: 100%;
+  padding: 0.9rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.contato .formulario-de-contato input::placeholder,
+.contato .formulario-de-contato textarea::placeholder {
+  font-size: 1.7rem;
+}
+
+.icones {
+  margin: 1rem 0;
+  display: block;
+}
+
+/* FOOTER */
+
+#rodape {
+  background-color: #444;
+}
+
+#rodape p {
+  color: #fff;
+}
+
+#rodape address {
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>IPS - Instituto Profissionalizante Santista</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="acessibilidade">
+      <nav>
+        <ul>
+          <li>
+            <a accesskey="1" title="Ir para o Menu" href="#imgLogo">[1] Ir Para o Menu</a>
+          </li>
+          <li>
+            <a accesskey="2" title="Ir Para o Conteúdo" href="#dvslider">[2] Ir Para o Conteúdo</a>
+          </li>
+          <li>
+            <a accesskey="3" title="Ir Para o Rodapé" href="#rodape">[3] Ir Para o Rodapé</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="direita" accesskey="4" title="Mapa do Site" href="mapa-site.html">
+        [4] Mapa do Site</a>
+    </div>
+    <nav>
+      <h1 class="logo">
+        <img src="img/LOGO.png" alt="logotipo ips" id="imgLogo" />
+      </h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <div class="burger">
+        <span class="linha1"></span>
+        <span class="linha2"></span>
+        <span class="linha3"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="dvslider">
+      <button onclick="troca(-1)" class="btSlider">&lt;</button>
+      <div id="dvload">
+        <div id="dvbarra"></div>
+      </div>
+      <button onclick="troca(1)" class="btSlider">&gt;</button>
+    </div>
+
+    <section class="mobile">
+      <div class="container">
+        <h2>Conceito e Aplicação de UX Design</h2>
+        <p>Aprenda o método de UX Design em 6 meses semipresencial ou EAD</p>
+
+        <h2>Montagem e Manutenção de Hardware</h2>
+        <p>Aprenda a realizar manutenção em microcomputadores e em notebooks em até 6 meses semipresencial ou EAD</p>
+
+        <h2>Desenvolvimento Web com Javascript</h2>
+        <p>Aprenda front-end e back-end para web com JavaScript em 6 meses semipresencial ou EAD</p>
+
+        <h2>Informática Básica para Terceira Idade</h2>
+        <p>Curso prático com duração de 6 meses semipresencial ou EAD</p>
+      </div>
+
+    </section>
+    <section class="feedback">
+      <div class="container">
+        <div class="comentarios">
+          <div class="comentario">
+            <img class="avatar" src="img/Janaina.jpeg" alt="avatar-do-cliente-1" />
+            <div>
+              <h3>Janaina Duarte de Almeida</h3>
+              <p>
+                "De início eu me senti um pouco insegura com toda essa
+                tecnologia, mas com o tempo eu pude me adentrar a esse mundo e
+                descobrir novos horizontes."
+              </p>
+            </div>
+          </div>
+          <div class="comentario">
+            <img class="avatar" src="img/Daniel.jpg" alt="avatar-do-cliente-2" />
+            <div>
+              <h3>Daniel Stifesson Nunes</h3>
+              <p>
+                "Gostei muito do curso de Design, as ferramentas Adobe é sem
+                dúvidas seu pontapé inicial no mundo do Design, tantas
+                possibilidades."
+              </p>
+            </div>
+          </div>
+          <div class="comentario">
+            <img class="avatar" src="img/Joselina.jpg" alt="avatar-do-cliente-3" />
+            <div>
+              <h3>Joselina de Aparecida Costa</h3>
+              <p>
+                "Olá, sou Joselina e adorei o curso, estou surfando na
+                internet como nunca, tenho redes sociais e agora posso seguir
+                meus netos e familiares a qualquer hora."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <p class="center">
+      IPS - Instituto Profissionalizante Santista. Todos os Direitos
+      Reservados. &copy; 2020
+    </p>
+
+    <address class="center">Av. Senador Feijó, 350 - Vila Matias, Santos - SP</address>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+
+</html>
